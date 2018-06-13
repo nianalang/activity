@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="340dp"
+    android:layout_height="70dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:background="@drawable/panel_bg_login_register">
+
+    <LinearLayout
+        android:id="@+id/ly_publish_task"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_publish_task"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/publish_task" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发布任务"
+            android:textSize="11sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="4px"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@color/main_bg_userinfo" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_check_task"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_toEndOf="@+id/ly_publish_task"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_check_task"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/check_task" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看任务"
+            android:textSize="11sp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="4px"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@color/main_bg_userinfo" />
+
+    <LinearLayout
+        android:id="@+id/ll_no_accomplish_task"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_no_accomplish_task"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/no_accomplish_task" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="未完成订单"
+            android:textSize="11sp"/>
+    </LinearLayout>
+    <View
+        android:layout_width="4px"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@color/main_bg_userinfo" />
+
+    <LinearLayout
+        android:id="@+id/ll_order_task"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_order_task"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/order_task" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已完成订单"
+            android:textSize="11sp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

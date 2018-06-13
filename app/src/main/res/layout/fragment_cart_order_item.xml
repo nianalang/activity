@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iv_cart_order"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="29dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_cart_order"
+        android:layout_marginStart="35dp"
+        android:layout_toEndOf="@+id/iv_cart_order"
+        android:text="交易平台："
+        android:textColor="@color/drop_down_unselected"
+        android:id="@+id/tv_cart_order_platform_title" />
+
+    <TextView
+        android:id="@+id/tv_cart_order_platform"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_cart_order_platform_title"
+        android:layout_marginStart="13dp"
+        android:layout_toEndOf="@+id/tv_cart_order_platform_title"
+        android:text="支付宝" />
+
+    <TextView
+        android:id="@+id/tv_cart_order_price_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_cart_order"
+        android:layout_alignStart="@+id/tv_cart_order_platform_title"
+        android:text="实时收款："
+        android:textColor="@color/drop_down_unselected"/>
+
+    <TextView
+        android:id="@+id/tv_cart_order_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_cart_order_price_title"
+        android:layout_alignStart="@+id/tv_cart_order_platform"
+        android:text="5元" />
+
+
+</RelativeLayout>

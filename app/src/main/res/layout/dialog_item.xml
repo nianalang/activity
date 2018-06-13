@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="400dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:background="@drawable/dialog_panel_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_dialog_title_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:src="@drawable/publish_task" />
+
+        <TextView
+            android:id="@+id/tv_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="发布任务"
+            android:textColor="@color/titleAll"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/main_bg_userinfo"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout10">
+
+
+            <TextView
+                android:id="@+id/tv_locate"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="送达的地点:"
+                android:textSize="16dp"/>
+
+            <EditText
+                android:id="@+id/et_dialog_locate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:layout_gravity="center"
+                android:hint="例如：8号公寓535寝"
+                android:inputType="textPersonName"
+                android:background="@null"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/linearLayout10"
+            android:background="@color/main_bg_userinfo"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/linearLayout10"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout11">
+
+
+            <TextView
+                android:textSize="16dp"
+                android:gravity="center"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="收件人姓名:" />
+
+            <EditText
+                android:id="@+id/et_dialog_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:layout_gravity="center"
+                android:hint="例如：张三"
+                android:inputType="textPersonName"
+                android:textSize="14dp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/linearLayout11"
+            android:background="@color/main_bg_userinfo"/>
+
+
+        <LinearLayout
+            android:id="@+id/LinearLayout12"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/linearLayout11"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textSize="16dp"
+                android:gravity="center"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="收件人电话:" />
+
+            <EditText
+                android:id="@+id/et_dialog_phone"
+                android:textSize="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:inputType="textPersonName"
+                android:hint="请输入代取的手机号" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/LinearLayout12"
+            android:background="@color/main_bg_userinfo"/>
+
+        <LinearLayout
+            android:id="@+id/ll_price"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/LinearLayout12"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+
+            <TextView
+                android:textSize="16dp"
+                android:gravity="center"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="代取 价格:" />
+
+            <EditText
+                android:id="@+id/et_dialog_price"
+                android:textSize="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:inputType="textPersonName"
+                android:hint="例如：5元" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/ll_price"
+            android:background="@color/main_bg_userinfo"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout13"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="99dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text=" 快递信息："
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/et_dialog_info"
+                android:layout_width="210dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/dialog_panel_bg"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:maxLines="10"
+                android:minLines="8"
+                android:scrollbars="vertical" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/linearLayout13"
+            android:background="@color/main_bg_userinfo"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <Button
+            android:id="@+id/tv_left"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:text="发布"
+            android:textColor="@color/titleAll"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/viewcenter"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/main_bg_userinfo"/>
+
+        <Button
+            android:id="@+id/tv_right"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:text="取消"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/titleAll"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

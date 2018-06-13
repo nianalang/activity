@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="340dp"
+    android:layout_height="40dp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tv_theme_title"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="17dp"
+        android:gravity="center_vertical"
+        android:text="最近消息"
+        android:textColor="@color/titleAllNormal"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/iv_look_arrow"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/tv_theme_title"
+        android:src="@drawable/look_arrow" />
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:background="@color/white">
+
+
+    <TextView
+        android:id="@+id/tv_cart_no_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="您的快递已被代取，信息如下："
+        android:textColor="@color/drop_down_unselected" />
+
+    <TextView
+        android:id="@+id/tv_cart_no_order_inf_price_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_cart_no_order"
+        android:layout_below="@+id/tv_cart_no_order"
+        android:text="代取价格："
+        android:textColor="@color/drop_down_unselected"/>
+
+
+    <TextView
+        android:id="@+id/tv_cart_no_order_inf_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_cart_no_order_inf_price_title"
+        android:layout_below="@+id/tv_cart_no_order_inf_price_title"
+        android:text="快递信息："
+        android:textColor="@color/drop_down_unselected"/>
+
+    <TextView
+        android:id="@+id/tv_cart_no_order_inf_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_cart_no_order_inf_title"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/tv_cart_no_order_inf_price_title"
+        android:text="5元" />
+
+    <TextView
+        android:id="@+id/tv_cart_no_order_inf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_cart_no_order_inf_title"
+        android:layout_alignBottom="@+id/tv_cart_no_order_inf_title"
+        android:layout_toEndOf="@+id/tv_cart_no_order_inf_price_title"
+        android:text="【菜鸟驿站】圆通包裹到大连民院东门左行10米菜鸟驿站，请18:30前凭1-1-7623取，联系方式： m.tb.cn/E.d3zWhS。" />
+
+    <Button
+        android:id="@+id/bt_cart_no_order"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/tv_cart_no_order_inf"
+        android:layout_marginStart="40dp"
+        android:layout_toEndOf="@+id/tv_cart_no_order"
+        android:text="确认支付"
+        android:textColor="@color/white"
+        android:background="@drawable/button_select"/>
+
+
+</RelativeLayout>

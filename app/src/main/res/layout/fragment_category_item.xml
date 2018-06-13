@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+    android:background="@color/white">
+
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/rl_information"
+        android:background="@color/main_bg_userinfo"/>-->
+
+    <RelativeLayout
+        android:id="@+id/rl_information"
+        android:layout_width="match_parent"
+        android:layout_height="71dp">
+
+        <ImageView
+            android:id="@+id/im_person_phonto"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="31dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/im_person_phonto"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/im_person_phonto"
+            android:gravity="center|left"
+            android:text="念阿郎"
+            android:textColor="@color/theme_primary"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignStart="@+id/tv_nickname"
+            android:layout_below="@+id/tv_nickname"
+            android:layout_centerVertical="true"
+            android:gravity="center|left"
+            android:text="18-5-20"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/rl_information"
+        android:background="@color/main_bg_userinfo"
+        android:id="@+id/view1" />
+
+    <RelativeLayout
+        android:id="@+id/rl_all_information"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/rl_information">
+
+        <TextView
+            android:id="@+id/tv_item_locate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="0dp"
+            android:text="地点："
+            android:textColor="@color/drop_down_unselected"/>
+
+
+        <TextView
+            android:id="@+id/tv_item_locate_replace"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_item_locate"
+            android:layout_toEndOf="@+id/tv_item_locate"
+            android:text="8号公寓535寝"
+            android:textColor="@color/tv_gray_deep"/>
+
+
+        <TextView
+            android:id="@+id/tv_item_method"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_item_locate_replace"
+            android:layout_alignBottom="@+id/tv_item_locate_replace"
+            android:layout_marginStart="30dp"
+            android:layout_toEndOf="@+id/tv_item_locate_replace"
+            android:text="联系方式："
+            android:textColor="@color/drop_down_unselected"/>
+
+        <TextView
+            android:id="@+id/tv_item_method_replace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_item_method"
+            android:layout_alignBottom="@+id/tv_item_method"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/tv_item_method"
+            android:text="15140594871"
+            android:textColor="@color/tv_gray_deep" />
+
+        <TextView
+            android:id="@+id/tv_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tv_item_locate"
+            android:layout_below="@+id/tv_item_locate"
+            android:layout_marginTop="10dp"
+            android:text="代取价格："
+            android:textColor="@color/drop_down_unselected"/>
+
+
+        <TextView
+            android:id="@+id/tv_item_price_replace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_item_price"
+            android:layout_alignBottom="@+id/tv_item_price"
+            android:layout_alignEnd="@+id/tv_item_locate_replace"
+            android:layout_toEndOf="@+id/tv_item_price"
+            android:text="5元"
+            android:textColor="@color/tv_gray_deep"/>
+
+
+
+        <TextView
+            android:id="@+id/tv_item_addrress"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tv_item_price"
+            android:layout_below="@+id/tv_item_price"
+            android:text="快递信息:"
+            android:textColor="@color/drop_down_unselected"/>
+
+        <TextView
+            android:id="@+id/tv_item_addrress_replace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_item_addrress"
+            android:layout_alignBottom="@+id/tv_item_addrress"
+            android:layout_toEndOf="@+id/tv_item_addrress"
+            android:textColor="@color/tv_gray_deep"
+            android:text="【菜鸟驿站】圆通包裹到大连民院东门左行10米菜鸟驿站，请18:30前凭1-1-7623取，联系方式： m.tb.cn/E.d3zWhS。" />
+
+        <TextView
+            android:id="@+id/tv_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_item_price"
+            android:layout_alignBottom="@+id/tv_item_price"
+            android:layout_alignStart="@+id/tv_item_method"
+            android:text="收件人姓名："
+            android:textColor="@color/drop_down_unselected"/>
+
+        <TextView
+            android:id="@+id/tv_item_name_replace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_item_name"
+            android:layout_toEndOf="@+id/tv_item_name"
+            android:text="郎媛勤"
+            android:textColor="@color/tv_gray_deep"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/rl_all_information"
+        android:background="@color/main_bg_userinfo"
+        android:id="@+id/view" />
+
+    <LinearLayout
+        android:id="@+id/ll_line"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/rl_all_information"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_replace_express"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="@drawable/button_select"
+            android:text="代取"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/btn_cancel_express"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="50dp"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:background="@drawable/button_select"/>
+    </LinearLayout>
+
+</RelativeLayout>

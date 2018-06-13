@@ -1,0 +1,107 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+
+    <style name="CustomizedWindowTitleBackground">
+        <item name="android:background">#7DD590</item>
+    </style>
+
+
+    <style name="titlebarstyle" parent="android:Theme">
+        <item name="android:windowTitleSize">25dp</item>
+        <item name="android:clipToPadding">true</item>
+        <item name="android:windowTitleBackgroundStyle">@style/CustomizedWindowTitleBackground</item>
+    </style>
+
+
+
+
+
+
+
+
+
+    <!-- 定义在文件中的共有属性 -->
+    <!--tab的样式-->
+    <style name="tab_linear_layout">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:descendantFocusability">beforeDescendants</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+
+    </style>
+
+    <!-- android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            android:clickable="false"-->
+    <style name="tab_image_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">#0000</item>
+        <item name="android:clickable">false</item>
+    </style>
+
+    <style name="tab_image_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#A6A6A6</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <!--登陆和注册-->
+    <style name="layout_login_register">
+        <item name="android:layout_width">220dp</item>
+        <item name="android:layout_height">40dp</item>
+       <!-- <item name="android:textColor">#7DD590</item>-->
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+   <!-- <style name="AppTheme" parent="AppBaseTheme">
+        &lt;!&ndash; 设置无标题 &ndash;&gt;
+        <item name="android:windowNoTitle">true</item>
+        &lt;!&ndash; 设置全屏 &ndash;&gt;
+        <item name="android:windowFullscreen">true</item>
+    </style>-->
+
+
+
+    <style name="MyDialogStyleBottom" parent="android:Theme.Dialog">
+
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+        <item name="android:windowAnimationStyle">@android:style/Animation.InputMethod</item>
+    </style>
+
+    <!--个人信息-->
+    <style name="personal_style">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/drop_down_unselected</item>
+    </style>
+
+
+</resources>

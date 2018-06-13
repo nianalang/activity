@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 设置按钮点击前的颜色 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <solid android:color="#ffffff"/>  <!-- 设置图形为填充图形并且设置填充颜色 -->
+    <corners android:radius="5dp"/>    <!-- 矩形四个角的圆角半径 -->
+</shape>

@@ -1,0 +1,183 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:background="#7DD590"
+        android:gravity="center"
+        android:id="@+id/linearLayout9">
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout9"
+        android:background="#7DD590"
+        android:id="@+id/relativeLayout">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/persona_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:text="哥的世界你不懂" />
+
+        <ImageView
+            android:id="@+id/persona_setting"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="25dp"
+            android:src="@drawable/setting" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:layout_below="@+id/relativeLayout"
+        android:id="@+id/linearLayout12"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_personal_my_inform"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center"
+            android:src="@drawable/personal_my_inform" />
+
+        <TextView
+            android:id="@+id/tv_personal_inf"
+            android:text="我的信息"
+            style="@style/personal_style"/>
+
+        <ImageView
+            android:id="@+id/iv_personal_info_return"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="150dp"
+            android:src="@drawable/look_arrow" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:layout_below="@+id/linearLayout12"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout14">
+
+        <ImageView
+            android:id="@+id/iv_personal_my_order"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center"
+            android:src="@drawable/personal_my_order" />
+
+        <TextView
+            android:id="@+id/tv_personal_my_order"
+            android:text="我的订单"
+            android:layout_gravity="center"
+            style="@style/personal_style"/>
+
+        <ImageView
+            android:id="@+id/iv_personal_my_order_return"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="150dp"
+            android:src="@drawable/look_arrow" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:layout_below="@+id/linearLayout14"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout15">
+
+        <ImageView
+            android:id="@+id/iv_personal_my_balance"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center"
+            android:src="@drawable/personal_my_balance" />
+
+        <TextView
+            android:id="@+id/tv_personal_my_balance"
+            android:text="我的余额"
+            android:layout_gravity="center"
+            style="@style/personal_style"/>
+
+        <ImageView
+            android:id="@+id/iv_personal_my_balance_return"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="150dp"
+            android:src="@drawable/look_arrow" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:layout_below="@+id/linearLayout15"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_personal_replace_pass"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center"
+            android:src="@drawable/personal_replace_pass" />
+
+        <TextView
+            android:id="@+id/tv_personal_replace_pass"
+            android:text="修改密码"
+            android:layout_gravity="center"
+            style="@style/personal_style"/>
+
+        <ImageView
+            android:id="@+id/iv_personal_replace_pass_return"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="150dp"
+            android:src="@drawable/look_arrow" />
+    </LinearLayout>
+
+
+</RelativeLayout>

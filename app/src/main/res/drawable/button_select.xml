@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+	<solid android:color="#7DD590"/>  <!-- 设置图形为填充图形并且设置填充颜色 -->
+	<corners android:radius="200dp"/>    <!-- 矩形四个角的圆角半径 -->
+
+
+</shape>

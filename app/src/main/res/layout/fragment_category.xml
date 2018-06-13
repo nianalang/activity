@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3FFF9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#7DD590"
+        android:gravity="center"
+        android:id="@+id/linearLayout9">
+        <LinearLayout
+            android:layout_width="240dp"
+            android:layout_height="25dp"
+            android:background="@drawable/home_title_search">
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/search" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout9">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rc_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/linearLayout9"
+            android:background="@color/tv_gray_lit" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>
