@@ -74,7 +74,7 @@ public class AdActivity extends Activity{
     private void initView() {
 
         skipButton=(Button)findViewById(R.id.bt_skip);
-       /* skipButton.setOnClickListener(new View.OnClickListener() {
+        skipButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //TODO  判断以前是否登陆过
@@ -83,7 +83,6 @@ public class AdActivity extends Activity{
                 startActivity(intent);
                 finish();
             }
-        });*/
+        });
     }
-
 }

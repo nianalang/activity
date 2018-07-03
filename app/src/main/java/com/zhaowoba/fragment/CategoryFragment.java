@@ -63,9 +63,6 @@ public class CategoryFragment extends android.support.v4.app.Fragment implements
                 android.R.color.holo_orange_light
        );
 
-
-
-
      /*   rViewList.addItemDecoration(new RecycleViewDivider(
                 getActivity(), LinearLayoutManager.VERTICAL, 10, getResources().getColor(R.color.red)));*/
         //设置adapter
@@ -108,8 +105,7 @@ public class CategoryFragment extends android.support.v4.app.Fragment implements
                 //设置布局管理器
                 rViewList.setLayoutManager(new LinearLayoutManager(getActivity()));//这里用线性显示 类似于listview
                 //添加分割线
-       /* rViewList.addItemDecoration(new DividerItemDecoration(
-                getActivity(), DividerItemDecoration.VERTICAL));*/
+
                 rViewList.addItemDecoration(new RecycleViewDivider(
                         getActivity(), LinearLayoutManager.VERTICAL, R.drawable.divider_mileage));
                 CategoryRecyerViewAdapter adapter = new CategoryRecyerViewAdapter(getActivity(),postData);
